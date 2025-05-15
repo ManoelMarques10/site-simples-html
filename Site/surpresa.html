@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIIA OIIA</title>
+    <link rel="shortcut icon" href="Imagens/Cat.ico" type="image/x-icon">
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(255, 185, 220);">
+
+    <div style="align-items: center; margin: 0; justify-content: center; display: flex; margin-top: 25vh; text-align: center;">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/0CR9fNB9fds?autoplay=1&mute=1" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div>
+        <h1 style="text-align: center;"><a href="index.html">Voltar</a></h1>
+    </div>
+
+    <script>
+        const cores = ["#ffb9dc", "#b9dfff", "#b9ffcb", "#ffe3b9", "#f0b9ff"];
+        let i = 0;
+
+        document.body.style.backgroundColor = cores[i];
+        i = (i + 1) % cores.length;
+
+        setInterval(() => {
+            document.body.style.backgroundColor = cores[i];
+            i = (i + 1) % cores.length;
+        }, 1000);
+    </script>
+
+</body>
+</html>
